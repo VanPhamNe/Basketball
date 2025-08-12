@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-    public Transform ballParent;    // Parent ch?a các qu? bóng
-    public LayerMask ballLayer;     // Layer mask ?? l?c bóng khi raycast
+    public Transform ballParent;    
+    public LayerMask ballLayer;     
     public float forceMultiplier = 5f;
 
     private Rigidbody selectedBallRb;
@@ -13,7 +13,7 @@ public class BallController : MonoBehaviour
     private Vector3 startDragPos;
     private bool isDragging = false;
     private Camera mainCamera;
-    public GameObject touchTrailPrefab;  // Gán prefab Touch Trail s?n có vào inspector
+    public GameObject touchTrailPrefab;  
     private GameObject currentTouchTrail;
 
 
@@ -47,12 +47,11 @@ public class BallController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100f, ballLayer))
         {
-            // B?t ??u kéo qu? bóng ???c ch?n
             selectedBallTrans = hit.transform;
             selectedBallRb = selectedBallTrans.GetComponent<Rigidbody>();
             isDragging = true;
 
-            selectedBallRb.isKinematic = true; // T?t v?t lý ?? kéo
+            selectedBallRb.isKinematic = true; 
             startDragPos = selectedBallTrans.position;
             if (touchTrailPrefab != null)
             {
@@ -87,13 +86,13 @@ public class BallController : MonoBehaviour
         if (throwDir.magnitude < 0.1f)
             return;
 
-        // Thay vì dùng throwDir ngang, ta l?y h??ng c? ??nh v? phía tr??c (Z d??ng)
+        
         Vector3 horizontalDir = Vector3.forward;
-        float horizontalMag = throwDir.magnitude; // dùng ?? dài kéo làm l?c ngang
+        float horizontalMag = throwDir.magnitude; 
 
         Vector3 forceHorizontal = horizontalDir * horizontalMag * forceMultiplier;
 
-        // L?c nâng nh? tr??c
+        
         float verticalForce = Mathf.Max(throwDir.y, 0f) * forceMultiplier * 2f;
         Vector3 forceVertical = Vector3.up * verticalForce;
 
