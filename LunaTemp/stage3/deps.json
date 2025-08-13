@@ -1,0 +1,26 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/AudioManager.cs",
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/BallCheckScore.cs",
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/GameManager.cs",
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/BallController.cs"
+    ],
+    [
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/BallSelectRotate.cs"
+    ],
+    [
+      "E:/code/Basketball/LunaTemp/stage3/processed-scripts/Assets/Scripts/UIManager.cs"
+    ],
+    [
+      "E:/New folder/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "E:/New folder/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "E:/New folder/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
