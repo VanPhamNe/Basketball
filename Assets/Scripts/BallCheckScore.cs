@@ -16,11 +16,8 @@ public class BallCheckScore : MonoBehaviour
         }
         else if (other.CompareTag("dunkBot") && passedTop)
         {
-            // N?u bóng qua trigger trên sau khi ?ã qua trigger d??i thì tính ?i?m
             GameManager.Instance.AddScore(1);
             Debug.Log("Ghi diem");
-
-            // Reset l?i tr?ng thái ?? ??m l?n ti?p theo
             passedTop = false;
         }
     }
