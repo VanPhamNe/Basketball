@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BallSelectRotate : MonoBehaviour
 {
-    public Transform ballSelectParent;  // ch?a 5 qu? bóng m?u ?? ch?n (xoay)
-    public Transform ballParent;        // ch?a 5 qu? bóng con c?n ??i material
+    public Transform ballSelectParent;  
+    public Transform ballParent;        
 
     private int currentIndex = 0;
 
@@ -44,7 +44,6 @@ public class BallSelectRotate : MonoBehaviour
         currentIndex = index;
     }
 
-    // G?i hàm này khi nh?n nút OK
     public void OnConfirmSelection()
     {
         if (ballSelectParent == null || ballParent == null)
